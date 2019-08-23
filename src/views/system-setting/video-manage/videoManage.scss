@@ -1,0 +1,39 @@
+.addVideo_component{
+  /deep/ .el-dialog__close{
+    display: none;
+  }
+}
+.table-list {
+   /deep/ .el-table__row {
+        height: 43px;
+    }
+  .table-btn {
+      height: 26px;
+      line-height: 25px;
+      padding: 0 11px;
+      background: #31313C;
+      color: #fff;
+      border-radius: 3px;
+    &.el-button+.el-button {
+      margin-left: 10px;
+    }
+    &.delete{
+        background: #E9E9EB;
+        color: #424242;
+    }
+  }
+
+  .el-table__header-wrapper {
+    background-color: #e7e7f7;
+  }
+
+  .el-table__body tbody td {
+    text-align: center;
+  }
+
+  /deep/ .el-table__row {
+      td{
+          padding: 0 0 1px 0;
+      }
+  }
+}

@@ -1,0 +1,497 @@
+// 登录页面样式修改
+$sureBtn: #fd8f00;
+$loseBtn: #a0a0a0;
+$white: #fff;
+.el-radio__input.is-checked+.el-radio__label{
+  color: #333;
+}
+.el-pagination {
+  height: 60px;
+  padding-top: 15px;
+  text-align: center;
+  background-color: #fff;
+  .el-pager {
+    margin-top: 3px;
+    .number {
+      // width: 20px;
+      // height: 20px;
+      min-width: 20px;
+      line-height: 20px!important;
+      margin: 0 5px;
+    }
+    li.active {
+      // width: 20px;
+      // height: 20px;
+      border-radius: 50%;
+      background-color: $sureBtn;
+      color: $white;
+    }
+    li{
+      height: auto;
+    }
+  }
+}
+.el-dialog__header {
+  height: 40px;
+  background-color: #f3f3f3;
+  padding: 0;
+  line-height: 40px;
+  padding-left: 10px;
+  .el-dialog__headerbtn {
+    top: 12px;
+  }
+}
+.el-input__inner{
+  height: 30px;
+}
+.move_footer{
+  text-align: center;
+  margin-top: 50px;
+ .sureAdd {
+  background: #fd8f00;
+}
+.noAdd {
+  background-color: #a0a0a0;
+}
+.noAdd,
+.sureAdd {
+  width: 104px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+}
+}
+.login_container {
+  .el-form-item {
+    margin-bottom: 25px;
+    .el-input {
+      width: 374px;
+      height: 50px;
+      line-height: 0;
+      background-color: $white;
+      .el-input__inner {
+        width: 374px;
+        height: 50px;
+        font-size: 14px;
+        padding-left: 52px;
+        border-radius: 0px;
+      }
+    }
+  }
+}
+// 系统设置里的组织机构样式修改
+
+  .el-checkbox__input.is-checked .el-checkbox__inner{
+    background-color: #fd8f00;
+    border: #fd8f00;
+  }
+  .el-checkbox__input.is-focus .el-checkbox__inner{
+    border:1px solid #dcdfe6;
+  }
+  .el-checkbox__inner:hover{
+    border: #fd8f00;
+    background-color: #fd8f00;
+  }
+  .el-checkbox__input.is-checked+.el-checkbox__label{
+    color: #333;
+  }
+  .el-checkbox__input.is-indeterminate .el-checkbox__inner{
+    background-color: #fd8f00;
+    border: none;
+  }
+
+.el-form-item__label {
+  font-weight: 700;
+  color: #333;
+}
+.el-table__header-wrapper{
+  background-color: #e7e7f7;
+  .el-table__header{
+  .has-gutter{
+    th{
+    background-color: #e7e7f7;
+      text-align: center;
+    }
+  }
+  }
+}
+.el-table__body{
+  tbody{
+    td{
+      text-align: center;
+    }
+  }
+}
+.popper__arrow{
+  left: 56px !important;
+}
+.el-select-dropdown__item{
+  height: auto;
+}
+.org_container {
+  // .el-tree-node__content{
+  //   padding-left: 24px!important;
+  // }
+  .w-select{
+    .el-select{
+      .el-input__inner{
+        width: 143px;
+      }
+    }
+  }
+  .el-input--suffix {
+    width: 141px;
+  }
+  .el-input__inner {
+    height: 30px;
+    background-color: $white;
+    border-radius: 3px;
+  }
+  .el-table th:nth-of-type(5),
+  .cell {
+    text-align: center;
+  }
+  .departAddressBox{
+    position: absolute;
+    right: 7px;
+    top: 0px;
+  }
+  .org_addUser,.org_editUser{
+    // 新增弹框的样式修改
+    .el-tree-node__content{
+      margin: 0 0!important;
+    }
+    .el-dialog {
+      width: 810px;
+      height: 500px;
+      .el-dialog__header {
+        width: 810px;
+      }
+      .el-form-item {
+        height: 30px;
+        margin: 0 10px 26px 0;
+        .el-form-item__content {
+          width: 141px;
+          height: 30px;
+          .el-checkbox__inner {
+            width: 16px;
+            height: 16px;
+            margin-left: 46px;
+            border: solid 1px #b9b9b9;
+          }
+          .el-checkbox__label {
+            font-weight: 700;
+          }
+        }
+        .el-input__inner {
+          width: 140px;
+          height: 30px;
+        }
+       
+      }
+      .el-dialog__footer {
+        position: absolute;
+        bottom: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+        .el-button {
+          color: $white;
+          width: 104px;
+          height: 40px;
+        }
+      }
+    }
+  }
+  .addUserPhone{
+    width: 450px;
+    margin: 50px auto;
+    .el-input__inner{
+      width: 300px!important;
+      height: 35px!important;
+    }
+    .el-form-item__error{
+      padding-top: 9px;
+    }
+  }
+  // 添加部门的样式修改
+  .org_addDepart{
+    .el-dialog {
+      width: 810px;
+      min-height: 520px;
+      .el-cascader{
+        width: 384px;
+        .el-input{
+          width: 384px;
+        }
+      }
+      .el-dialog__header {
+        width: 810px;
+      }
+      .team_introduce{
+        .el-textarea__inner {
+          width: 635px;
+          height: 70px !important;
+        }
+      }
+      .depart_address{
+        .el-input__inner{
+          width: 635px;
+          padding-right: 40px;
+        }
+      }
+      .upDepart_name{
+        .el-input__inner{
+          width: 290px;
+        }
+      }
+      .el-form-item{
+        margin: 0 10px 18px 0;
+        &:nth-of-type(5){
+          .el-form-item__content{
+            .el-input--suffix{
+              width: 140px;
+            }
+          }
+        }
+        &:nth-of-type(1){
+          .el-input__inner{
+            width: 289px;
+            margin-right: 128px;
+          }
+        }
+        &:nth-of-type(4){
+          margin-right: 98px;
+        }
+        &:nth-of-type(3),&:nth-of-type(4){
+          .el-form-item__content{
+            .el-input--suffix{
+              width: 138px;
+            }
+          }
+        }
+        .el-form-item__content{
+          .el-checkbox__inner {
+            width: 16px;
+            height: 16px;
+            border: solid 1px #b9b9b9;
+          }
+          .el-checkbox__label {
+            font-weight: 700;
+          }
+        }
+        }
+        .el-dialog__footer {
+          position: absolute;
+          bottom: 20px;
+          left: 50%;
+          transform: translateX(-50%);
+          .el-button {
+            color: $white; 
+            width: 104px;
+            height: 40px;
+          }
+        }
+        .depart_phone{
+          margin-right: 0px !important;
+          display: inline-block;
+          .el-form-item__label{
+            width: 95px !important;
+          }
+          .el-input__inner{
+            width: 140px;
+          }
+        }
+    }
+  }
+  // 删除部门样式
+  .org_deleteDepart{
+    .el-dialog{
+      width: 400px;
+      height: 230px;
+      .el-dialog__header{
+        width: 100%;
+      }
+    .el-dialog__body{
+      margin-top: 20px;
+      text-align: center;
+      color: #333;
+      letter-spacing: 1px;
+      .el-input{
+        width: 240px;
+        margin-left: 8px;
+      }
+    }
+    .el-dialog__footer{
+      text-align: center;
+      .el-button{
+        width: 104px;
+        height: 40px;
+        background-color: #fd8f00;
+        border-radius: 5px;
+        border: none;
+      }
+    }
+    }
+  }
+  // 批量转移员工样式
+  .org_editUser{
+    .el-dialog__body{
+      // text-align: center;
+      .newDepartBox{
+        .el-form-item{
+          // text-align: center;
+          margin-top: 43px;
+          margin-left: 48px;
+          .el-input{
+            width: 620px;
+            height: 30px;
+            .el-input__inner{
+              width: 618px;
+            }
+          }
+          .el-form-item__error{
+            margin-top: 5px;
+          }
+        }
+      }
+      .moveEmployeeDec{
+        margin-top: 50px;
+        letter-spacing: 1px;
+      }
+    }
+  }
+  // 上传logo样式
+  .org_upload {
+    .el-dialog {
+      width: 514px !important;
+      height: 400px;
+      .el-dialog__body{
+        padding: 40px 36px 0 36px;
+        .el-upload-list{
+          position: absolute;
+          left: 75px;
+          top: 0;
+        }
+          .el-upload--picture-card{
+            width: 68px;
+            height: 68px;
+            text-align: center;
+            line-height: 68px;
+           border: none;
+        }
+        .el-upload-list__item{
+          // width: 360px;
+          // height: 90px;
+          width: 68px;
+          height: 68px;
+        }
+      }
+    }
+  }
+  //  新增banner样式
+   .org_addBanner{
+    .el-dialog{
+      width: 514px;
+      height: 548px;
+      .move_footer{
+        margin-top: 84px;
+      }
+      .el-form-item{
+        height: 30px;
+        margin-bottom: 15px;
+        &:nth-of-type(7){
+          margin-top: 16px;
+        }
+        .message{
+          position: absolute;
+          right: 40px;
+          top: 0;
+          width: 129px;
+          line-height: 16px;
+          span{
+            color: #ff5151;
+          }
+        }
+        .el-upload--picture-card{
+          width: 129px;
+          height: 60px;
+          background-color: #e4e4e4;
+          line-height: 68px;
+          border-radius: 0;
+          border: none;
+        }
+        .el-upload-list--picture-card{
+          position: absolute;
+          left: 116px;
+          top: 0;
+          li{
+            width: 129px;
+            height: 60px;
+            border-radius: 0
+          }
+        }
+      .el-form-item__label{
+        width: 115px;
+        height: 40px;
+        text-align: right;
+      }
+      .el-input{
+        width: 350px;
+      }
+      .el-form-item__error{
+        margin-left: 90px;
+      }
+      }
+
+        .el-radio__label{
+          color: #333;
+        }
+    }
+   }
+  //  组织架构左边树状样式
+}
+.org_leftTree{
+  .el-tree-node:focus>.el-tree-node__content{
+    background: #E6E6FD !important;
+  }
+  .el-tree-node__expand-icon{
+    color: #333;
+    font-size: 14px;
+  }
+  .el-tree-node__expand-icon.is-leaf{
+    color: transparent!important;
+  }
+  .el-tree {
+    line-height: 20px;
+    >.el-tree-node{
+      >.el-tree-node__content{
+        font-weight: bold;
+        color: #333;
+        font-size: 16px;
+      }
+      >.el-tree-node__children{
+        >.el-tree-node{
+          >.el-tree-node__content{
+            font-weight: bold;
+            color: #333;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+  .el-tree-node__content{
+        padding: 18px 0;
+        &:hover{
+          background-color: #E6E6FD;
+        }
+      }
+    .el-tree-node__children{
+      font-size: 17px;
+      color: #333;
+      .el-tree-node__children{
+        font-size: 15px;
+      }
+    }
+}

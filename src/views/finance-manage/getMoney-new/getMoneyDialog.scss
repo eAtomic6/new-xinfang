@@ -1,0 +1,597 @@
+.el-icon-minus {
+  color: #72a0d1;
+  font-size: 15px;
+  vertical-align: middle;
+  font-weight: 900;
+}
+/deep/ .el-dialog {
+    width: 800px;
+  }
+  .toLong_css{
+    display: inline-block;
+    width: 183px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    height: 22px;
+    line-height: 30px;
+  }
+  .successColor{
+    color: #666666;
+  }
+  .failColor{
+   color: #FF5438;
+  }
+  .coloring{
+   color: #26A656;
+  }
+  // /deep/ .el-autocomplete-suggestion__list{
+  //   height: 175px !important;
+  // }
+  .saleStepOne_deal{
+    &::before{
+      content: '*';
+      color: #f56c6c;
+      margin-right: 4px;
+    }
+  }
+  .pop-cancelbtn {
+    background-color: #A0A0A0;
+    color: #fff;
+    cursor: pointer;
+  }
+  .submitbtnCss{
+    margin-left: 30px !important;
+  }
+  .pop-submitbtn {
+    background-color: #fd8f00;
+    color: #fff;
+    cursor: pointer;
+  }
+  .activeColor {
+    background-color: #47af6e !important;
+    color: #fff;
+     &::after {
+          content: "";
+          width: 0;
+          height: 0;
+          border-left: 20px solid #47af6e;
+          border-top: 31px solid transparent;
+          border-bottom: 30px solid transparent;
+          position: absolute;
+          top: 0;
+          right: -20px;
+          z-index: 2;
+        }
+         &::before {
+          content: "";
+          width: 0;
+          height: 0;
+          border-left: 20px solid #fff;
+          border-top: 31px solid transparent;
+          border-bottom: 30px solid transparent;
+          position: absolute;
+          top: 0;
+          left: 0px;
+          z-index: 1;
+        }
+  
+  }
+  .activeColorN {
+  //   border-color: transparent transparent transparent #47af6e !important;
+      &::before {
+          content: "";
+          width: 0;
+          height: 0;
+          border-left: 20px solid #fff;
+          border-top: 31px solid transparent;
+          border-bottom: 30px solid transparent;
+          position: absolute;
+          top: 0;
+          left: 0px;
+          z-index: 1;
+        }
+      &::after{
+           content: "";
+          width: 0;
+          height: 0;
+          border-left: 20px solid #ddd;
+          border-top: 31px solid transparent;
+          border-bottom: 30px solid transparent;
+          position: absolute;
+          top: 0;
+          right: -20px;
+          z-index: 2;
+      }
+  
+  }
+  // 公共头部样式
+  .saleForm_top {
+    // width: 100%;
+    // height: 60px;
+    text-align: center;
+    > ul {
+      margin: 0 auto;
+      width: 550px;
+      height: 62px;
+      position: relative;
+      > li {
+      margin-right: 10px;
+        float: left;
+        position: relative;
+        width: 170px;
+        height: 61px;
+        text-align: center;
+        line-height: 61px;
+        background-color: #ddd;
+        &:nth-last-child(1){
+            &::after{
+                content:"";
+              border-left: 20px solid #fff;
+            }
+        }
+        &:nth-of-type(1){
+            &::before{
+                content:"";
+              border-left: 20px solid #47af6e;
+            }
+        }
+      }
+    }
+    > div {
+      margin-bottom: 44px;
+      margin-top: 21px;
+      i {
+        color: #5a9ef2;
+        font-size: 19px;
+      }
+      span {
+        color: #ff5438;
+        margin-left: 11px;
+      }
+    }
+  }
+  h3 {
+    color: #333333;
+    font-weight: bold;
+    font-size: 14px;
+    height: 30px;
+    margin: 5px 0 5px 0;
+  }
+  .saleStepOne_top {
+    > ul {
+      margin-top: 10px;
+      height: 160px;
+      > li {
+        padding-left: 10px;
+        width: 50%;
+        line-height: 18px;
+        p {
+          height: 36px;
+          label {
+            color: #666666;
+          }
+          span {
+            color: #333333;
+            word-break: keep-all;
+            float: right;
+            width: 305px;
+            word-break: break-all;
+          }
+        }
+      }
+    }
+  }
+  .saleStepOne_center {
+    .list-box {
+      margin: 5px 0.5% 0 0;
+      vertical-align: middle;
+      width: 90%;
+      height: 120px;
+      margin-bottom: 15px;
+      ul li {
+        position: relative;
+        float: left;
+        width: 14%;
+        text-align: center;
+  
+        .c-big {
+          z-index: 3;
+          position: relative;
+          width: 32px;
+          height: 32px;
+          background: #dedede;
+          text-align: center;
+        }
+  
+        .c-small {
+          margin-top: 5px;
+          width: 21px;
+          height: 21px;
+          background: #9b9b9b;
+        }
+  
+        .c-name {
+          margin-top: 5px;
+          font-size: 12px;
+          line-height: 22px;
+        }
+  
+        .c-time {
+          color: #999;
+          font-size: 12px;
+        }
+  
+        &:before {
+          z-index: 1;
+          content: "";
+          display: block;
+          position: absolute;
+          top: 46px;
+          left: -50px;
+          width: 100%;
+          height: 1px;
+          background: #9b9b9b;
+        }
+  
+        &.on {
+          .c-big {
+            background: #ffdcb0;
+          }
+  
+          .c-small {
+            background: #fd8f00;
+          }
+  
+          &:before {
+            background: #fd8f00;
+          }
+        }
+  
+        &:first-child:before {
+          background: none;
+        }
+      }
+    }
+    .saleStepOne_centerForm {
+      /deep/ .el-form {
+        padding: 0 5px 0 5px;
+        .el-form-item {
+          margin-bottom: 6px;
+          width: 235px;
+          label {
+            width: 84px !important;
+            color: #666666;
+            font-weight: normal;
+          }
+          .el-form-item__content {
+            width: 150px;
+            .el-date-editor {
+              width: 150px;
+            }
+          }
+        }
+        .contractType{
+          display: block;
+          width: 100%;
+          .el-form-item__content{
+            width: 75%;
+          }
+        }
+        .afterContent{
+            position: relative;
+            .el-form-item__content{
+                width: 130px;
+                span {
+                    position: absolute;
+                    right: -21px;
+                    top: 0;
+                }
+            }
+        }
+      }
+    }
+  }
+  .upload-image-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px 0 10px 0;
+    > div{
+    flex-wrap: wrap;
+    }
+    .clickUpload{
+      position: absolute;
+      bottom: 2px;
+      left: 32px;
+      color: #B2B2B2;
+    }
+    li {
+      width: 110px;
+      height: 90px;
+      margin-bottom: 10px;
+      text-align: center;
+      position: relative;
+      margin-right: 20px;
+      .mask {
+          display: none;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: rgba(34, 34, 34, 0.6);
+          .ico-box {
+            margin: 25px auto;
+            font-size: 0;
+            text-align: center;
+            .font-btn {
+                display: inline-block;
+                height: 40px;
+                width: 50%;
+                padding: 0 20px;
+                box-sizing: border-box;
+                &:last-child{
+                    position: relative;
+                    .line {
+                        content: '';
+                        display: inline-block;
+                        position: absolute;
+                        left: 0;
+                        top: 10px;
+                        width: 1px;
+                        height: 20px;
+                        background: #fff;
+                    }
+                }
+            }
+  
+            .icon-fangda,
+            .icon-shanchu {
+              font-size: 22px;
+              color: #fff;
+            }
+          }
+      }
+      &:hover {
+            .mask {
+              display: block;
+            }
+          }
+      img {
+        width: 110px;
+        height: 90px;
+      }
+  
+      > span {
+        display: inline-block;
+        border: 1px solid #f2f2f2;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        padding: 0 10px;
+        margin-top: 10px;
+        line-height: 1.4;
+        &:first-of-type {
+          position: absolute;
+          top: 0;
+          right: 0;
+          background-color: red;
+          color: #ffffff;
+          display: flex;
+          width: 30px;
+          height: 30px;
+          align-items: center;
+          justify-content: center;
+          margin: -15px -15px 0 0;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          border-radius: 50%;
+        }
+  
+        &.cover-photo {
+          border-color: #fd8f00;
+          color: #fd8f00;
+        }
+      }
+    }
+    
+  }
+  .upload-box {
+    position: relative;
+    .upload-btn {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 110px;
+      height: 90px;
+    }
+  }
+  .gallery-window-opera {
+    width: 110px;
+    height: 110px;
+    background-color: #e7e7e7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    > span {
+      margin-bottom: 20px;
+      width: 34px;
+      height: 34px;
+      line-height: 29px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      border: 1px solid #a0a0a0;
+      font-size: 24px;
+      align-self: center;
+      text-align: center;
+      color: #b2b2b2;
+    }
+  }
+  // ===================================================步骤二中的样式====================================
+  .saleStepTwo{
+    // ====================================步骤二上部样式========================================
+    .saleStepTwo_top{
+      >p {
+        margin-bottom: 8px;
+        span{
+          font-size: 18px;
+          font-weight: 700;
+          color: #333333;
+        }
+      }
+      /deep/ .el-form{
+        .el-form-item {
+          margin-bottom: 6px;
+          label {
+            color: #666;
+            font-weight: normal;
+          }
+          .el-textarea__inner{
+            background:rgba(255,255,255,1);
+            border:1px solid rgba(208, 208, 208, 1);
+            border-radius:3px;
+          }
+          .descContent {
+            color: #999;
+            position: absolute;
+            bottom: -11px;
+            right: 11px;
+          }
+          &:nth-of-type(1){
+            .el-input{
+              width: 126px;
+              .el-input__inner{
+                width: 126px;
+              }
+            }
+          }
+        }
+      }
+    }
+    // ====================================步骤二中部样式========================================
+    .saleStepTwo_center{
+      h4{
+        font-weight: 700;
+        margin-bottom: 17px;
+      }
+      margin-bottom: 47px;
+    }
+    .saleStepTwo_footer{
+      h4{
+        font-weight: 700;
+        margin-bottom: 17px;
+      }
+      /deep/ .el-form{
+        .el-form-item{
+          label{
+            font-weight: normal;
+            color: #666;
+          }
+          .el-input{
+            width: 136px;
+            .el-form-item__content{
+              width: 136px;
+            }
+          }
+          &:nth-of-type(2){
+            margin-left: 154px;
+          }
+        }
+      }
+      p{
+        margin-top: 10px;
+        label{
+          color: #333333;
+          font-weight: 700;
+        }
+        span{
+          font-size: 20px;
+          color: #FF5438;
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+  // ===================================================步骤三中的样式====================================
+  .saleStepThree{
+    img{
+      width: 83px;
+      margin-bottom: 30px;
+    }
+    .success-loading{
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 100px;
+    }
+    > div {
+      text-align: center;
+      p{
+        margin-bottom: 18px;
+        &:nth-of-type(2){
+          color: #666;
+          font-size: 16px;
+          padding-left: 80px;
+        }
+      }
+      span{
+        &:nth-of-type(1){
+          font-size: 40px;
+          color: #47af6e;
+        }
+        &:nth-of-type(2),&:nth-of-type(3),&:nth-of-type(4){
+          font-size: 22px;
+          color: #333;
+          font-weight: 700;
+        }
+        &:nth-of-type(4){
+          font-weight: normal;
+          margin-left: 20px;
+        }
+      }
+      >ul{
+        width: 350px;
+        height: 60px;
+        margin: 39px auto;
+        line-height: 20px;
+        background-color: #FFF2F2;
+        li{
+          text-align: left;
+          color: #D18789;
+        }
+      }
+    }
+  }
+  // ==================================================步骤一中最下面样式==============================
+  .saleStepOne_footer {
+    > ul {
+      width: 100%;
+      height: 102px;
+      margin-bottom: 50px;
+      > li {
+        float: left;
+        width: 50%;
+        p{
+            margin-bottom: 5px;
+          label{
+              color: #666666;
+              display: inline-block;
+              width: 70px;
+              text-align-last: justify;
+          }  
+          /deep/ .el-input{
+              width: 100px;
+          }
+        }
+        &:nth-of-type(2){
+            p {
+                margin-bottom: 15px;
+            }
+        }
+      }
+    }
+  }
+  /deep/ .el-table{
+    margin: auto;
+  }

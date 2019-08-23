@@ -1,0 +1,380 @@
+#dropPrepare {
+    width: 100%;
+    padding: 0 20px;
+    // === 公共的类 ===
+    .el-form-item,
+    .el-form-item__label,
+    .el-input,
+    .el-input__inner {
+      height: 30px;
+      .el-input__icon.el-icon-date {
+        position: absolute;
+        top: 0;
+        right: 170px;
+        font-size: 18px;
+      }
+      .el-date-editor.el-input, .el-date-editor.el-input__inner {
+        width: 200px;
+      }
+    }
+    .w-select .el-input__inner{
+      padding: 0 20px;
+    }
+    .el-form-item__error {
+      line-height: 0;
+    }
+    .el-form-item__label {
+      padding-right: 6px;
+    }
+    //  字体图标
+    .org-icon{
+      font-size: 15px;
+      margin-right: 3px;
+      line-height: 5px;
+    }
+    // === 搜索表单 ===
+    .demo-form-inline {
+      padding: 16px 200px 0 27px;
+      // height: 62px;
+      background: #d7d7df;
+      .el-form-item {
+        margin-right: 30px;
+        margin-bottom: 15px;
+        &:nth-child(1) {
+          .el-input__inner {
+            width: 200px;
+          }
+        }
+        &:nth-child(5) {
+          .el-input__inner {
+            width: 200px;
+          }
+        }
+        &:nth-child(6),
+        &:nth-child(7),
+        &:nth-child(8) {
+          margin-right: 20px;
+        }
+      }
+    }
+    // === 退筹表单 ===
+    .drop-prepare-table {
+      .demo-table-expand {
+        .expand-one,
+        .expand-two,
+        .expand-three,
+        .expand-four {
+          ul {
+            // display: flex;
+            // justify-content: flex-start;
+            li {
+              height: 35px;
+              text-align: left;
+              color: #666666;
+              word-wrap: break-word;
+              width: 180px;
+              &:first-child {
+                color: #333;
+              }
+            }
+          }
+        }
+        .expand-one {
+          ul {
+            li:last-child {
+              .el-icon-phone {
+                width: 28px;
+                height: 28px;
+                line-height: 28px;
+                text-align: center;
+                font-size: 16px;
+                color: #fff;
+                border-radius: 3px;
+                &:nth-child(1) {
+                  background-color: #38a04e;
+                }
+                &:nth-child(2) {
+                  background-color: #808080;
+                }
+                &:nth-child(3) {
+                  background-color: #afafaf;
+                }
+              }
+            }
+          }
+        }
+        .expand-two {
+          padding-left: 30px;
+        }
+        .expand-four {
+          li:last-of-type {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis; 
+          }
+        }
+        // 退筹证据
+        .expand-fifth {
+          margin-top: 20px;
+          margin-bottom: 30px;
+          width: 78px;
+          height: 96px;
+          // background-color: #929292;
+          img{
+            width: 100%;
+          }
+        }
+        // 进度条
+        .expand-six {
+          width: 42%;
+          .list-box {
+            height: 130px;
+            width: 100%;
+            .black-g {
+              color: #333;
+              margin-bottom: 10px;
+            }
+            em {
+              display: inline-block;
+              border-radius: 50%;
+            }
+            ul li {
+              position: relative;
+              float: left;
+              width: 14%;
+              text-align: center;
+              .c-big {
+                z-index: 3;
+                position: relative;
+                width: 32px;
+                height: 32px;
+                background: #dedede;
+                text-align: center;
+              }
+              .c-small {
+                margin-top: 5px;
+                width: 21px;
+                height: 21px;
+                background: #9b9b9b;
+              }
+              .c-name {
+                margin-top: 5px;
+                font-size: 12px;
+                line-height: 22px;
+                height: 22px;
+              }
+              .c-time {
+                color: #999;
+                font-size: 12px;
+              }
+              &:before {
+                z-index: 1;
+                content: "";
+                display: block;
+                position: absolute;
+                top: 56px;
+                left: -50px;
+                width: 100%;
+                height: 2px;
+                background: #9b9b9b;
+              }
+  
+              &.on {
+                .c-big {
+                  background: #ffdcb0;
+                }
+                .c-small {
+                  background: #fd8f00;
+                }
+                &:before {
+                  background: #fd8f00;
+                }
+              }
+              &:first-child:before {
+                background: none;
+              }
+            }
+          }
+          // .el-steps {
+          //   .el-step {
+          //     position: relative;
+          //     .el-step__head {
+          //       .el-step__icon {
+          //         width: 32px;
+          //         height: 32px;
+          //         background: #dedede;
+          //       }
+          //     }
+          //     .el-step__main {
+          //       position: relative;
+          //       .el-step__title {
+          //         position: absolute;
+          //         left: 46px;
+          //         top: -60px;
+          //         color: #333;
+          //       }
+          //       .el-step__description {
+          //         line-height: 36px;
+          //       }
+          //     }
+          //     .step-personinfo {
+          //       color: #808080;
+          //       p {
+          //         height: 20px;
+          //       }
+          //     }
+          //   }
+          // }
+        }
+        // 退筹确认按钮
+        .expand-seven {
+          position: relative;
+          padding-top: 40px;
+          .btn-drop-prepare {
+            width: 100px;
+            height: 26px;
+            background-color: #31313c;
+            color: #fff;
+            border-radius: 3px;
+            border: none;
+            cursor: pointer;
+          }
+          .el-icon-edit-outline {
+            position: absolute;
+            top: 47px;
+            left: 6px;
+            color: #fff;
+          }
+        }
+      }
+      .el-table__expanded-cell {
+        padding: 15px 20px;
+        box-sizing: border-box;
+      }
+      .cell {
+        white-space: normal;
+      }
+    }
+    //=== 退筹证据 模态框 ===
+    .drop-prepare-proof {
+      .el-dialog {
+        .el-dialog__body {
+          height: 100%;
+          padding: 15px;
+          .drop-preparebox {
+            height: 100%;
+            width: 100%;
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+    //=== 退筹确认模态框 ===
+    .drop-confirm {
+      .strong-title {
+        display: block;
+        height: 20px;
+        color: #333;
+      }
+      .st-second,
+      .st-three {
+        margin-top: 20px;
+      }
+      .base-info,
+      .confirm-prepare-info,
+      .drop-prepare-check {
+        padding: 10px;
+        p {
+          line-height: 36px;
+          width: 100%;
+          color: #999;
+        }
+        span {
+          width: 30%;
+          display: inline-block;
+          color: #999;
+        }
+        .confirm-prepare {
+          display: inline-block;
+          margin-left: 20px;
+          width: 72px;
+          // height: 72px;
+          // background: #dadada;
+          img {
+            width: 100%;
+          }
+          // .imgScale{
+          //   transform: scale(1);
+          //   transition: all ease .5s;
+          //   &.active{
+          //     transform: scale(6);
+          //     position: relative;
+          //     z-index: 100;
+          //   }
+          // }
+        }
+      }
+      // 基本信息
+      .base-info {
+        // span:nth-child(2),
+        // span:nth-child(3) {
+        //   margin-left: 60px;
+        // }
+      }
+      // 认筹资料
+      .confirm-prepare-info {
+        p {
+          // span:nth-child(2),
+          // span:nth-child(3),
+          // span:nth-child(4) {
+          //   margin-left: 40px;
+          // }
+        }
+        .p-confirm {
+          margin-bottom: 16px;
+        }
+        .span-confirm-prepare {
+          margin-left: 0px;
+          width: 10%;
+        }
+      }
+      // 退筹审批
+      .drop-prepare-check {
+        // span:nth-child(2) {
+        //   margin-left: 60px;
+        // }
+        .p-drop-reason {
+          margin-bottom: 16px;
+        }
+        .span-drop-prepare {
+          // letter-spacing: 7px;
+          width: 10%;
+        }
+      }
+      .el-dialog {
+        // 底部点击按钮
+        .dialogfoot-btn {
+          display: flex;
+          justify-content: center;
+          margin-top: 10px;
+          .el-button {
+            width: 104px;
+            height: 40px;
+            color: #fff;
+            border: 0;
+            &:hover {
+              border: 0;
+            }
+          }
+          .agreenot {
+            background-color: #a0a0a0;
+          }
+          .agreeok {
+            background-color: #fd8f00;
+          }
+        }
+      }
+    }
+  }

@@ -1,0 +1,85 @@
+const showTableData=[
+        {
+            name:"客户姓名",
+            value:"name",
+            width:"90"
+        },
+        {
+            name:"客户手机号",
+            value:"follow_type",
+            width:"120"
+        },
+        {
+            name:"佣金状态",
+            value:"reason_type",
+            width:"100"
+        },
+        {
+            name:"项目名称",
+            value:"follow_reason",
+            width:"120"
+        },
+        {
+            name:"合同状态",
+            value:"pc_name",
+            width:"80"
+        },
+        {
+            name:"成交人",
+            value:"create_time",
+            width:"90"
+        },
+        {
+            name:"所属部门",
+            value:"b_name",
+            width:"130",
+            deletePower:"deletePower"
+        },
+        {
+            name:"客户来源",
+            value:"state",
+            width:"100"
+        },
+        {
+            name:"成交日期",
+            value:"expect_look_time",
+            width:"120"
+        },
+        {
+            name:"房号",
+            value:"pro_time_agent_report",
+            width:"100",
+        },
+        {
+            name:"合同面积",
+            value:"remaining",
+            width:"100"
+        },
+        {
+            name:"合同总价",
+            value:"pc_name",
+            width:"120"
+        },
+        {
+            name:"佣金金额",
+            value:"pc_name",
+            width:"120"
+        },
+        {
+            name:"已收佣",
+            value:"pc_name",
+            width:"120"
+        },
+        {
+            name:"已结佣",
+            value:"pc_name",
+            width:"120"
+        }
+]
+const RULE = {
+    // followType:[{ required: true, message: '请选择跟进类型', trigger: 'change' }],
+    // reasonType:[{ required: true, message: '请选择跟进目的', trigger: 'change' }],
+    // followReason:[{ required: true, message: '请输入备注说明', trigger: 'blur' }],
+    level:[{required: true, message: '请选择客户等级', trigger: 'change' }],
+}
+export {showTableData,RULE}
